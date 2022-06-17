@@ -12,7 +12,7 @@ pipeline {
 		{
          steps{
 			   //powershell(script: 'docker images -a')
-            //powershell(script:"ol")
+            powershell(script:"ol")
             echo "$GIT_BRANCH"
          }
 		}
