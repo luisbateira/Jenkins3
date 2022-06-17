@@ -11,7 +11,7 @@ pipeline {
 		stage('Docker build')
 		{
          steps{
-			   sh '''docker images -a '''
+			   sh '''ls '''
             //powershell(echo:"ol")
             echo "$GIT_BRANCH"
          }
