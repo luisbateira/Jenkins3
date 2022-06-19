@@ -11,7 +11,7 @@ pipeline {
 		stage('Docker build')
 		{
          steps{
-			   pwsh (script 'docker images -a ')
+			   pwsh (script 'ol ')
             //powershell(echo:"ol")
             echo "$GIT_BRANCH"
          }
