@@ -15,10 +15,10 @@ pipeline {
             sh ('ls -l')
             //powershell(echo:"ol")
 
-            script: """
+            sh (script: """
                cd azure-vote/
                docker images -a
-               """
+               """)
             echo "$GIT_BRANCH"
          }
 		}
